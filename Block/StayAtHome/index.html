@@ -1,0 +1,46 @@
+<div class="house">
+  <div class="light"></div>
+  <div class="door"></div>
+</div>
+<style>
+  body {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: #6592CF;
+  }
+  .house {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 150;
+    height: 100;
+    background: #243D83;
+    margin-bottom: 42;
+    border-radius: 0 0 10px 10px;
+  }
+  .house::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    border: 100px solid #243D83;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+  .door {
+    margin-top: auto;
+    width: 50;
+    height: 50;
+    background: #EEB850;
+    border-radius: 10px 10px 0 0;
+  } 
+  .light {
+    margin-top: -5px;
+    height: 10;
+    width: 100;
+    background: #EEB850;
+    border-radius: 6px;
+    z-index: 2;
+  } 
